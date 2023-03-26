@@ -1,0 +1,3 @@
+try{var config = JSON.parse(document.getElementById('slardar-config').textContent);var slardarClient = config.slardarClient||'SlardarLite';
+!function(e,n,r,t,d){if(window[n]&&window[n].config)return;var i=document.createElement(r),s=document.getElementsByTagName(r)[0];i.async=1,i.src=e;var a=s.parentNode;a&&a.insertBefore(i,s);var o=[];function c(){o.push(arguments[0])}window[n]={error:o,config:t,listener:c,sf:d},window.addEventListener("error",c,!0),window.addEventListener("unhandledrejection",c)}(config.sdkUrl,slardarClient,"script",config,0);window[slardarClient].manual=config.manual||0; 
+}catch(e){}
